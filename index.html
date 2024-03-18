@@ -1,61 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>welcome</title>
-	<style>
-		body {
-			background-image: url('bround.gif');
-			font-family: Arial, sans-serif;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			background-color: #fff;
-			box-shadow: 0 0 20px #999;
-			border-radius: 10px;
-			border: 1px solid #ccc;
-		}
-		h1 {
-			font-size: 48px;
-			font-weight: bold;
-			color: #a832a4;
-			text-align: center;
-			margin-top: 50px;
-		}
-		p {
-			font-size: 24px;
-			line-height: 1.5;
-			text-align: justify;
-			margin: 20px 0;
-		}
-		.button {
-			display: inline-block;
-			padding: 10px 20px;
-			background-color: #a832a4;
-			color: #fff;
-			font-size: 24px;
-			font-weight: bold;
-			text-decoration: none;
-			border-radius: 5px;
-			margin-top: 20px;
-		}
-		.button:hover {
-			background-color: #cc0000;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #grad1 {
+      height: 100%;
+      background-color: pink;
+      background-image: linear-gradient(to top right, purple, pink);
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 5vw; /* Responsive font size */
+      color: white;
+      margin: 0; /* Remove default margin */
+    }
+
+    #image-container {
+      position: relative;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    #centered-image {
+      width: 100%; /* Adjust the width of the image as needed */
+      height: auto; /* Maintain aspect ratio */
+      position: relative;
+      z-index: 1;
+    }
+
+    #touch-screen {
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%) translateX(-25px) rotateX(20.2deg) rotateY(20.2deg);
+      width: 53.5%; /* 10% smaller than the default */
+      height: auto; /* Maintain aspect ratio */
+      z-index: 0;
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<marquee>
-		<h1>welcome to ZEOZ.ONE!</h1>
-		</marquee>
-		<p>WEBSITE IS UNDERGOING MAINTENENCE, press the button below to go to ZEOZ.ONE</p>
-		<p></p>
-		<a href="subpage.html" class="button">take me to ZEOZ.ONE</a>
-	</div>
+  <div id="grad1">
+    <div id="image-container">
+      <img id="centered-image" src="aaaa.png" alt="Centered Image">
+      <img id="touch-screen" src="aaaaa.gif" alt="Touch Screen">
+    </div>
+  </div>
+  <meta http-equiv="refresh" content="7; URL=https://zeoz.one" />
 </body>
 </html>
+
+
